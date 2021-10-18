@@ -10,6 +10,8 @@ $color-text-3: #88869d;
 $color-grey: #616475;
 $color-grey-2: #6e707a;
 
+$color-blue: #3c47e9;
+
 *,
 *::after,
 *::before {
@@ -87,8 +89,7 @@ body {
 
 .current-weather {
   text-align: center;
-  height: 100%;
-  margin-top: 2rem;
+  margin-top: 10.9rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -146,6 +147,8 @@ body {
   background-color: $color-primary;
   padding-top: 8.2rem;
   padding-left: 4.7rem;
+  padding: 8.2rem 4.7rem 0;
+  // display: none;
 
   &__close-btn {
     position: absolute;
@@ -194,11 +197,19 @@ body {
       color: $color-grey;
     }
   }
+
+  &__btn {
+    border: none;
+    cursor: pointer;
+    width: 86px;
+    height: 48px;
+    margin-left: 1.2rem;
+    background: $color-blue;
+    color: $color-text;
+  }
 }
 
 .right-box {
   flex-basis: 68%;
   background: $color-secondary;
 }
-
-// haha
