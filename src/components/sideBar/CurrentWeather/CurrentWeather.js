@@ -8,10 +8,10 @@ function CurrentWeather(props) {
     data = props.data;
   }
 
-  let temp = Math.floor(data.the_temp);
+  let temp = Math.floor(data.the_temp).toString();
   let scale = '°C';
   if (props.tempScale === 'farenheit') {
-    temp = convertToFarenheight(Math.floor(data.the_temp));
+    temp = convertToFarenheight(Math.floor(data.the_temp)).toString();
     scale = '°F';
   }
 

@@ -3,11 +3,11 @@ import './DayForecast.scss';
 import { convertToFarenheight } from '../../../Utils/index';
 
 function DayForecast({ weather, max, min, day, tempScale }) {
-  let maxTemp = Math.floor(max);
-  let minTemp = Math.floor(min);
+  let maxTemp = Math.floor(max).toString();
+  let minTemp = Math.floor(min).toString();
   if (tempScale === 'farenheit') {
-    maxTemp = convertToFarenheight(max);
-    minTemp = convertToFarenheight(min);
+    maxTemp = convertToFarenheight(max).toString();
+    minTemp = convertToFarenheight(min).toString();
   }
 
   return (
