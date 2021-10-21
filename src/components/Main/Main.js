@@ -13,7 +13,7 @@ function Main({ data, getScale, tempScale, highlight }) {
 
   return (
     <div className='right-box'>
-      {/* <TempScale getScale={getScale} /> */}
+      <TempScale getScale={getScale} />
       <div className='foreCast5'>
         {weekly.map((item, index) => (
           <DayForecast
