@@ -1,0 +1,9 @@
+@import '../../scss/variable';
+
+.side-bar {
+  flex-basis: 32%;
+  background: $color-primary;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

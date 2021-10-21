@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&display=swap');
-
-$color-primary: #1e213a;
-$color-secondary: #100e1d;
-
-$color-text: #e7e7eb;
-$color-text-2: #a09fb1;
-$color-text-3: #88869d;
-
-$color-grey: #616475;
-$color-grey-2: #6e707a;
-
-$color-blue: #3c47e9;
+@import './scss/variable';
 
 *,
 *::after,
@@ -33,183 +22,20 @@ body {
 
 .app {
   display: flex;
+  min-height: 100vh;
   overflow: hidden;
 }
 
-.left-box {
-  flex-basis: 32%;
-  background: $color-primary;
-  min-height: 100vh;
-  padding: 4.2rem 4.6rem;
-  position: relative;
+::-webkit-scrollbar {
+  width: 6px;
 }
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
+::-webkit-scrollbar-thumb {
+  background: #616475;
+  border-radius: 10px;
 }
 
-.openSearch-btn {
-  padding: 1rem 2rem;
-  cursor: pointer;
-  background: $color-grey-2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: $color-text;
-  text-align: center;
-
-  &:hover,
-  &:focus {
-    background: rgba($color-grey-2, 0.7);
-  }
-}
-
-.current-location {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  position: relative;
-  cursor: pointer;
-
-  &__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 2.2rem;
-    height: 2.2rem;
-    color: $color-text;
-  }
-}
-
-.current-weather {
-  text-align: center;
-  margin-top: 10.9rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  &__img {
-    height: 23rem;
-  }
-
-  &__temperature {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14rem;
-    line-height: 17rem;
-    color: $color-text;
-
-    & .symbol {
-      font-size: 5rem;
-      color: $color-text-2;
-    }
-  }
-
-  &__state {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3.6rem;
-    line-height: 4.2rem;
-    text-align: center;
-
-    color: $color-text-2;
-  }
-
-  &__info {
-    font-style: normal;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    color: $color-text-3;
-  }
-
-  &__date {
-    font-weight: 500;
-  }
-
-  &__location {
-    font-weight: 600;
-    margin-top: 3.2rem;
-  }
-}
-
-.search {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: $color-primary;
-  padding-top: 8.2rem;
-  padding-left: 4.7rem;
-  padding: 8.2rem 4.7rem 0;
-  // display: none;
-
-  &__close-btn {
-    position: absolute;
-    top: 2rem;
-    right: 5.3rem;
-    cursor: pointer;
-    color: $color-text;
-
-    &:hover,
-    &:focus {
-      color: rgba($color-text, 0.8);
-    }
-  }
-
-  &__form {
-    display: flex;
-  }
-
-  &__input-box {
-    width: 268px;
-    height: 48px;
-    padding: 1.5rem;
-    border: 1px solid $color-text;
-    display: flex;
-    align-items: center;
-  }
-
-  &__icon {
-    width: 1.7rem;
-    height: 1.7rem;
-    color: $color-grey;
-    margin-right: 1.7rem;
-  }
-
-  &__input {
-    border: none;
-    background: transparent;
-    outline: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    color: $color-text;
-
-    &::placeholder {
-      color: $color-grey;
-    }
-  }
-
-  &__btn {
-    border: none;
-    cursor: pointer;
-    width: 86px;
-    height: 48px;
-    margin-left: 1.2rem;
-    background: $color-blue;
-    color: $color-text;
-  }
-}
-
-.right-box {
-  flex-basis: 68%;
-  background: $color-secondary;
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #616475;
+  border-radius: 10px;
 }

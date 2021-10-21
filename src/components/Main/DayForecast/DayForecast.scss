@@ -1,0 +1,37 @@
+.forecast-box {
+  background: #1e213a;
+  text-align: center;
+  padding: 1.8rem 2rem;
+  width: 16%;
+}
+
+.forecast-day {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #e7e7eb;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.forecast-imgBox {
+  width: 56.44px;
+  height: 62px;
+  margin: 0 auto;
+}
+
+.forecast-temparature {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 2.5rem;
+  &__max {
+    color: #e7e7eb;
+    margin-right: 1rem;
+  }
+  &__min {
+    color: #a09fb1;
+  }
+}

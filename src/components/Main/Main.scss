@@ -1,0 +1,36 @@
+@import '../../scss/variable';
+
+.right-box {
+  flex-basis: 68%;
+  background: $color-secondary;
+  padding: 4rem 10rem;
+}
+
+.change-scale {
+  display: flex;
+  justify-content: flex-end;
+
+  .btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: #585676;
+    border-radius: 54px;
+  }
+
+  .celcius {
+    margin-right: 1rem;
+  }
+
+  .active {
+    background: #e7e7eb;
+  }
+}
+
+.foreCast5 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,62 @@
+.highlight {
+  margin-top: 7rem;
+  color: #e7e7eb;
+
+  &__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.icon-wind {
+  background-color: hsla(0, 0%, 100%, 0.30196078431372547);
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.direction-compass {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.card-humidity {
+  margin-top: 12px;
+  width: 260px;
+}
+
+.humidity-percentage {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.humidity-bar {
+  background-color: #e7e7eb;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.bar-percentage {
+  background-color: #ffec65;
+}
+
+.bar {
+  border-radius: 8px;
+  height: 8px;
+}
+
+.percentage-sign {
+  float: right;
+}

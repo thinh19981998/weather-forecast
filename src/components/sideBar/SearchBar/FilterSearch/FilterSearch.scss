@@ -1,0 +1,31 @@
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    border: 1px solid #616475;
+    box-sizing: border-box;
+  }
+
+  &:hover .filter-icon {
+    display: block;
+  }
+}
+
+.filter-location {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #e7e7eb;
+}
+
+.filter-icon {
+  color: #616475;
+  display: none;
+}
