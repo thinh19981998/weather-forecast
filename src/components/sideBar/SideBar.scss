@@ -6,4 +6,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 950px) {
+    padding: 2rem;
+    height: 100vh;
+  }
 }

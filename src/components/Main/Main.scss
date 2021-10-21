@@ -3,7 +3,7 @@
 .right-box {
   flex-basis: 68%;
   background: $color-secondary;
-  padding: 4rem 10rem;
+  padding: 4rem 4rem;
 }
 
 .change-scale {
@@ -29,8 +29,8 @@
 }
 
 .foreCast5 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   margin-top: 6rem;
-  flex-wrap: wrap;
+  grid-gap: 3rem;
 }
