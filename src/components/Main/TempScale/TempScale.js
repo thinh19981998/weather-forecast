@@ -18,13 +18,13 @@ function TempScale({ getScale }) {
     <div className='change-scale'>
       <button
         className={`btn celcius ${celcius ? 'active' : ''}`}
-        onClick={activeCelciusScale}
+        onClick={() => activeCelciusScale()}
       >
         ℃
       </button>
       <button
         className={`btn farenheit ${celcius ? '' : 'active'}`}
-        onClick={activeFarenheitScale}
+        onClick={() => activeFarenheitScale()}
       >
         &#8457;
       </button>
