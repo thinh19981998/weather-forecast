@@ -42,7 +42,7 @@ function Highlights({ highlight }) {
             <div className='humidity-bar bar'>
               <div
                 className='bar-percentage bar'
-                style={{ width: `${dataHighlight.humidity}px` }}
+                style={{ width: `${dataHighlight.humidity}%` }}
               ></div>
             </div>
             <div className='percentage-sign'>%</div>
