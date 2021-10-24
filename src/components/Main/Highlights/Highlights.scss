@@ -39,6 +39,10 @@
 .card-humidity {
   margin-top: 12px;
   width: 260px;
+
+  @media (max-width: 400px) {
+    width: inherit;
+  }
 }
 
 .humidity-percentage {
