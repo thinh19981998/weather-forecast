@@ -53,6 +53,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
   @media (max-width: 950px) {
     margin-top: 4rem;
@@ -100,5 +102,17 @@
   &__location {
     font-weight: 600;
     margin-top: 3.2rem;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-13.9rem);
+  opacity: 0.1;
+
+  img {
+    width: 150%;
   }
 }

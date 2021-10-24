@@ -1,6 +1,7 @@
 import React from 'react';
 import './CurrentWeather.scss';
 import { formatDate, convertToFarenheight } from '../../../Utils/index';
+import background from '../../../assets/img/Cloud-background.png';
 
 function CurrentWeather(props) {
   let data = {};
@@ -28,6 +29,9 @@ function CurrentWeather(props) {
         </div>
       </div>
       <div className='current-weather'>
+        <div className='background'>
+          <img src={background} alt='background' />
+        </div>
         <div className='current-weather__img-box'>
           <img
             className='current-weather__img'
